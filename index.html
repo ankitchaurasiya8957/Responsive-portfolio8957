@@ -1,255 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Ankit Chaurasiya - Professional Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-container"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">AC</div>
+            <div class="loading-text">Loading Portfolio...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
 
-<div>
-    <header class="header">
-        <a href="#home" class="logo">Ankit
-            <span>Chaurasiya</span>
-        </a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact"> contact</a>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="navbar-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">AC</div>
+                <span class="logo-text">Ankit Chaurasiya</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
+    <!-- Home Section -->
     <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, It's <span>Ankit</span></h1>
-            <h3 class="text-animation"> I'm a <span></span>
-
-            </h3>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam est ullam similique, harum iusto minima
-                natus rem eligendi, amet perferendis excepturi numquam eveniet saepe velit quaerat tempora, laborum
-                atque quis.</p>
-
-            <div class="social-icons">
-                <a href="#">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="#">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-
-            </div>
-            <div class="btn-group">
-                <a href="#" class="btn">hire</a>
-                <a href="#contact" class="btn">contact</a>
-            </div>
-        </div>
-        <div class="home-img">
-            <img src="New__2_-removebg-preview.png" alt="">
-        </div>
-
-    </section>
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-        <div class="timeline-items">
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2022-23</div>
-                <div class="timeline-content">
-                    <h3>Intermediate</h3>
-                    <p>S.I.B.S NATIONAL INTER COLLEGE BHADOHI <br>
-                        GRADE A percentage(62%)
-                         </p>
+        <div class="home-container">
+            <div class="home-content">
+                <div class="greeting">
+                    <h1 class="greeting-text">Hello</h1>
+                    <div class="greeting-wave">👋</div>
                 </div>
-            </div>
-
-
-
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023-24</div>
-                <div class="timeline-content">
-                    <h3>University</h3>
-                    <p>KASHI INSTITTUE OF MANAGEMENT AND SCIENCE <br>
-                        COURSE- BCA  <br>
-                    Year 2023-2026</p>
+                
+                <p class="welcome-text">Welcome to my portfolio!</p>
+                
+                <h2 class="role-text">
+                    I'm a <span class="typing-text"></span>
+                </h2>
+                
+                <p class="description">
+                    Hi, I'm Ankit Chaurasiya, a passionate and dedicated BCA student with a strong interest in web development and problem-solving. I enjoy building clean, responsive websites and have hands-on experience with HTML, CSS, JavaScript, and C/C++ programming. I'm constantly learning new technologies and currently exploring full-stack development.
+                </p>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ankit-chaurasiya-496229306/?trk=opento_sprofile_pfeditor" class="social-icon" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                        <span class="tooltip">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/" class="social-icon" target="_blank">
+                        <i class='bx bxl-github'></i>
+                        <span class="tooltip">GitHub</span>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                        <span class="tooltip">Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                        <span class="tooltip">Twitter</span>
+                    </a>
                 </div>
-            </div>
-
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024-25</div>
-                <div class="timeline-content">
-                    <h3>TCS-ion</h3>
-                    <p>CERTIFICATION<br>
-                        COURSE- YOUNG PROFESSIONAL CARRIER EDGE  <br>
-                    Year 2023-2026</p>
+                
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary" download>
+                        <i class='bx bx-download'></i>
+                        Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class='bx bx-message-dots'></i>
+                        Get In Touch
+                    </a>
                 </div>
-            </div>
-
-         
-        </div>
-
-
-       
-    </section>
-
-
-    <section class="services" id="services">
-        <h2 class="heading">services</h2>
-          <div class="service-container">
-              <div class="service-box">
-                  <div class="service-info">
-                      <h4>UI Design</h4>
-                      <p></p>
-                  </div>
-              </div>
-          
-  
-  
-              <div class="service-box">
-                  <div class="service-info">
-                      <h4>Testing</h4>
-                      <p></p>
-                  </div>
-              </div>
-
-              <div class="service-box">
-                  <div class="service-info">
-                      <h4>Frontend Developement</h4>
-                      <p></p>
-                  </div>
-              </div>
-
-              <div class="service-box">
-                  <div class="service-info">
-                      <h4>Backend Developement</h4>
-                      <p></p>
-                  </div>
-              </div>
-
-          </div>
-      
-      </section>
-
-      <section class="testimonials" id="testimonials">
-        <div class="testimonials-box">
-            <h2 class="heading">Testimonials</h2>
-            <div class="wrapper">
-                <div class="testimonial-item">
-                    <img src="1.jpg" alt="">
-                    <h2>Explorry.com</h2>
-                    <div class="rating">
-
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio?</p>
-                </div>
-
-                <div class="testimonial-item">
-                    <img src="2.jpg" alt="">
-                    <h2>chrome-extension</h2>
-                    <div class="rating">
-
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio?</p>
-                </div>
-
-
-
-                     <div class="testimonial-item">
-                    <img src="3.jpg" alt="">
-                    <h2>website</h2>
-                    <div class="rating">
-
-                    </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, optio?</p>
-                </div>
-                        
-            </div>
-        </div>
-        </div>
-
-      </section>
-
-     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form action=""><div class="input-group">
-           <div class="input-box">
-             <input type="text" placeholder="Full Name">
-            <input type="email" placeholder="Email">
-           </div>
-            <div class="input-box">
-                <input type="number" 
-                placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
             </div>
             
+            <div class="home-visual">
+                <div class="floating-card card-1">
+                    <i class='bx bx-code'></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class='bx bx-palette'></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class='bx bx-mobile'></i>
+                </div>
+                <div class="profile-shape">
+                    <div class="profile-inner">
+                        <div class="profile-text">
+                            <div class="name">Ankit</div>
+                            <div class="title">Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    
-    <div class="input-group-2">
-        <textarea name="" id="" cols="30"
-        rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn">
-    </div>
-    </form>
-     </section>
+    </section>
 
-     <footer class="footer">
-        <div class="social">
-              <a href="https://www.linkedin.com/in/ankit-chaurasiya-496229306/?trk=opento_sprofile_pfeditor">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-                <a href="https://github.com/">
-                    <i class='bx bxl-github'></i>
-                </a>
-                <a href="#"><i class='bx bxl-instagram'></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-subtitle">My Academic Journey</div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item reveal-animation" data-delay="0">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022-23</div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class='bx bx-book-open'></i>
+                            </div>
+                            <h3>Intermediate</h3>
+                            <h4>S.I.B.S NATIONAL INTER COLLEGE BHADOHI</h4>
+                            <p>GRADE A percentage (62%)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal-animation" data-delay="200">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023-24</div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class='bx bx-graduation'></i>
+                            </div>
+                            <h3>University</h3>
+                            <h4>KASHI INSTITUTE OF MANAGEMENT AND SCIENCE</h4>
+                            <p>COURSE - BCA<br>Year 2023-2026</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item reveal-animation" data-delay="400">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024-25</div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class='bx bx-certificate'></i>
+                            </div>
+                            <h3>TCS-ion</h3>
+                            <h4>CERTIFICATION</h4>
+                            <p>COURSE - YOUNG PROFESSIONAL CAREER EDGE<br>Year 2024-2025</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <ul class="list">
-            <li>
-                <a href="#">FAQ</a>
+    </section>
 
-               
-            </li>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <div class="section-subtitle">What I Offer</div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-animation" data-delay="0">
+                    <div class="service-icon">
+                        <i class='bx bx-palette'></i>
+                    </div>
+                    <h3>UI Design</h3>
+                    <p>Creating beautiful and intuitive user interfaces with modern design principles and user-centered approach.</p>
+                    <div class="service-bg"></div>
+                </div>
+                
+                <div class="service-card reveal-animation" data-delay="100">
+                    <div class="service-icon">
+                        <i class='bx bx-bug'></i>
+                    </div>
+                    <h3>Testing</h3>
+                    <p>Comprehensive testing solutions to ensure your applications work flawlessly across all devices and browsers.</p>
+                    <div class="service-bg"></div>
+                </div>
+                
+                <div class="service-card reveal-animation" data-delay="200">
+                    <div class="service-icon">
+                        <i class='bx bx-code-alt'></i>
+                    </div>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive and interactive web applications using modern frontend technologies and frameworks.</p>
+                    <div class="service-bg"></div>
+                </div>
+                
+                <div class="service-card reveal-animation" data-delay="300">
+                    <div class="service-icon">
+                        <i class='bx bx-server'></i>
+                    </div>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust server-side applications and APIs to power your web applications effectively.</p>
+                    <div class="service-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-             <li>
-                    <a href="#">Services</a>
-                </li>
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="section-subtitle">What People Say</div>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card reveal-animation" data-delay="0">
+                    <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Client">
+                    </div>
+                    <h3>Explorry.com</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"Outstanding web development skills with great attention to detail. Delivered a beautiful and functional website that exceeded our expectations."</p>
+                </div>
+                
+                <div class="testimonial-card reveal-animation" data-delay="200">
+                    <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Client">
+                    </div>
+                    <h3>Chrome Extension</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bx-star'></i>
+                    </div>
+                    <p>"Excellent technical expertise in browser extension development. The solution was clean, efficient, and met all our requirements perfectly."</p>
+                </div>
+                
+                <div class="testimonial-card reveal-animation" data-delay="400">
+                    <div class="testimonial-image">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Client">
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"Professional, responsive, and visually stunning portfolio website. Great communication throughout the project and delivered on time."</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <li>
-                    <a href="#">About Me</a>
-                </li>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span>Me</span></h2>
+                <div class="section-subtitle">Let's Get In Touch</div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item reveal-animation" data-delay="0">
+                        <div class="contact-icon">
+                            <i class='bx bx-map'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>Bhadohi, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item reveal-animation" data-delay="100">
+                        <div class="contact-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>ankit.chaurasiya@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item reveal-animation" data-delay="200">
+                        <div class="contact-icon">
+                            <i class='bx bx-phone'></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 XXXXX XXXXX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form reveal-animation" data-delay="300">
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <input type="text" id="fullName" required>
+                            <label for="fullName">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group-row">
+                        <div class="form-group">
+                            <input type="tel" id="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="6" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class='bx bx-send'></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-                <li><a href="#">Contact </a></li>
-                <li>
-                    <a href="#">Testimonials</a>
-                </li>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/ankit-chaurasiya-496229306/?trk=opento_sprofile_pfeditor" class="social-icon" target="_blank">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/" class="social-icon" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="#" class="social-icon" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+                
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#home">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+                
+                <p class="copyright">
+                    &copy; 2025 Ankit Chaurasiya. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 
-
-        </ul>
-        <p class="copyright">
-
-            &copy; 2025 Ankit Chaurasiya. All rights reserved. 
-        </p>
-     </footer>
-
-  
-
-
-
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
-// Doing some changes to test merge conflict
-// Doing some changes to test merge conflict
